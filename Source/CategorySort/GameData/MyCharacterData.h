@@ -13,7 +13,7 @@ struct FMyCharacterData : public FTableRowBase
 
 public:
 	FMyCharacterData() :
-		Number(0),
+		Level(0),
 		Name(TEXT("Character Name")),
 		Strength(0),
 		Intelligence(0),
@@ -21,7 +21,7 @@ public:
 	{}
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	int32 Number;
+	int32 Level;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FName Name;
