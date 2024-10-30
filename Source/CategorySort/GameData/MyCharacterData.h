@@ -35,4 +35,25 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int32 Vitality;
 
+	int32 GetStatValue(FString& Stat)
+	{
+		if (Stat == TEXT("Level"))
+		{
+			return Level;
+		}
+		else if (Stat == TEXT("Strength"))
+		{
+			return Strength;
+		}
+		else if (Stat == TEXT("Intelligence"))
+		{
+			return Intelligence;
+		}
+		else if (Stat == TEXT("Vitality"))
+		{
+			return Vitality;
+		}
+
+		return -1;
+	}
 };
